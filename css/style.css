@@ -1,0 +1,187 @@
+/* Global and Pages*/
+body {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #808080;
+}
+
+#header {
+  top: 0;
+}
+
+#header .toggle {
+  display: none;
+}
+
+#header .toggle.active {
+  display: block;
+}
+
+@media (min-width: 720px) {
+  #header .home {
+    display: block;
+    left: 50%;
+  }
+}
+
+h2 {
+  letter-spacing: 10px;
+  font-size: 19px;
+  line-height: 35px;
+  padding: 26px;
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+
+.nav-links {
+  clear: both;
+  list-style: none;
+  padding: 10px 0px;
+  background: black;
+  text-align: center;
+}
+
+.nav-links li {
+  display: inline-block;
+  width: 33%;
+}
+
+.nav-links li a {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: 4px;
+  text-decoration: none;
+}
+
+.nav-links li a:before {
+  content: " | ";
+  line-height: 24px;
+}
+
+.nav-links li a:after {
+  content: " | ";
+  line-height: 24px;
+}
+
+.nav-links li a:hover {
+  opacity: 0.5;
+}
+
+.homepage-links {
+  height: 440px;
+  position: absolute;
+  background: black;
+  top: 60px;
+  bottom: 0;
+  margin: auto 20px;
+  width: 95%;
+}
+
+.homepage-links .homepage-link {
+  font-size: 90px;
+  line-height: 110px;
+  display: block;
+  position: relative;
+  color: white;
+  cursor: pointer;
+}
+
+#address-input .input-box {
+  display: table;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+#address-input .input-box h2 {
+  letter-spacing: 10px;
+  font-size: 19px;
+  line-height: 35px;
+  padding: 26px;
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+}
+
+#address-input .input-box span {
+  background: white;
+  font-size: 15px;
+  padding: 10px 0px;
+  display: table-cell;
+  text-align: center;
+  border: 1px solid #c4c4c4;
+}
+
+@media (min-width: 720px) {
+  #address-input .input-box span {
+    display: none;
+  }
+}
+
+#address-input .input-box .input-desktop {
+  position: relative;
+  background: white;
+  font-size: 15px;
+  padding: 10px 0px;
+  display: table-cell;
+  text-align: center;
+  width: 50%;
+  height: 44px;
+}
+
+@media (max-width: 720px) {
+  #address-input .input-box .input-desktop {
+    display: none;
+  }
+}
+
+#address-input .input-box i.icon-search {
+  position: absolute;
+  right: 100;
+  bottom: 0;
+  font-size: 22px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+#address-input .input-box i.icon-search:hover {
+  color: black;
+}
+
+#address-input .input-box > div {
+  float: left;
+}
+
+#address-input .input-box p {
+  font-size: 19px;
+  color: gray;
+  line-height: 35px;
+  padding: 26px;
+  display: block;
+  position: relative;
+  font-weight: 400;
+  text-align: center;
+}
+
+#address-input .message {
+  opacity: 0;
+}
+
+#address-input .message.active {
+  opacity: 1;
+}
+
+#why-we-make {
+  display: none;
+  position: absolute;
+  top: 3000px;
+}
