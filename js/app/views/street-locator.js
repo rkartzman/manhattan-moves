@@ -14,6 +14,7 @@ var StreetLocatorView = Backbone.View.extend({
 		console.log('intialized StreetLocatorView');
 
 		this.render();
+		window.onhashchange = this.reset;
 
 	}, 
 	render: function(){
@@ -21,6 +22,10 @@ var StreetLocatorView = Backbone.View.extend({
 
 		this.$el.html($temp).addClass('active');
 		console.log('rendered success');
+	},
+	reset: function(){
+		// this.$el.removeClass('active');
+		console.log('reset shit');
 	},
 	displayCrossStreet: function(crossStreet){
 		if (this.$el.find('.message').hasClass('active')) {
@@ -114,6 +119,7 @@ var StreetLocatorView = Backbone.View.extend({
 			var bldgNumb = Math.floor($('#bldNum').val());
 			this.calculateStreet(avenue, bldgNumb);
 			$(window).scrollTop(20);
+
 
 		}, 
 		'click .restart': function(e){
